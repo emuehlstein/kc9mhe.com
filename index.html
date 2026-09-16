@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KC9MHE — Eric Muehlstein — Chicago, IL — EN61</title>
+<meta name="description" content="KC9MHE — amateur radio station in Chicago, Illinois. MeshCore LoRa mesh, DMR, GMRS, APRS, and open-source radio tooling.">
+<link rel="canonical" href="https://kc9mhe.com/">
+<meta property="og:title" content="KC9MHE — Chicago, IL">
+<meta property="og:description" content="Amateur radio station in Chicago. MeshCore LoRa mesh, DMR, GMRS, and open-source radio tooling.">
+<meta property="og:image" content="https://kc9mhe.com/assets/qsl-chicago.jpg">
+<meta property="og:url" content="https://kc9mhe.com/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <img class="hero-bg" src="assets/qsl-chicago.jpg" alt="Satellite view of Chicago, the KC9MHE QSL card image" fetchpriority="high">
+  <div class="hero-scrim"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Amateur Radio Station</p>
+    <h1>KC9MHE</h1>
+    <p class="tagline">Eric Muehlstein &middot; Chicago, Illinois &middot; Grid EN61</p>
+    <ul class="badges">
+      <li><span class="k">Amateur</span><span class="v">KC9MHE &middot; General</span></li>
+      <li><span class="k">GMRS</span><span class="v">WRXC682</span></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="band">
+  <div class="wrap">
+    <h2>On the air</h2>
+    <p class="lede">Licensed since 2007, General since 2009. These days most of my
+    airtime goes to digital modes and building the infrastructure other people
+    operate on.</p>
+
+    <div class="grid">
+      <article class="card accent-cyan">
+        <h3>MeshCore / LoRa</h3>
+        <p>Primary focus. Running observer and repeater nodes on the Chicago
+        mesh and maintaining the firmware build the region standardizes on.</p>
+        <dl class="spec">
+          <dt>Frequency</dt><dd>910.525 MHz</dd>
+          <dt>Bandwidth</dt><dd>62.5 kHz</dd>
+          <dt>Spreading</dt><dd>SF 7</dd>
+          <dt>Coding rate</dt><dd>CR 5</dd>
+        </dl>
+      </article>
+
+      <article class="card accent-amber">
+        <h3>DMR</h3>
+        <p>Baofeng DM-32UV handhelds, programmed from a generator I wrote
+        rather than by hand in vendor CPS. Reverse-engineering notes published
+        for the parts the manufacturer never documented.</p>
+      </article>
+
+      <article class="card accent-green">
+        <h3>GMRS &amp; MURS</h3>
+        <p>WRXC682. Family and neighborhood comms — the licensing tier most
+        people actually need, and the one worth making easy to program.</p>
+      </article>
+
+      <article class="card">
+        <h3>APRS &amp; packet</h3>
+        <p><span class="mono">KC9MHE-9</span> mobile. Also running Direwolf on
+        a Pi for RF packet, and experimenting with Reticulum over a Bluetooth
+        KISS TNC.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band band-alt">
+  <div class="wrap">
+    <h2>Chicago Offline</h2>
+    <p class="lede">I'm the trustee and primary builder behind
+    <a href="https://chicagooffline.com">Chicago Offline</a> — a community LoRa
+    mesh for Chicagoland, built so the city has a communications layer that
+    works when the commercial one doesn't.</p>
+    <p>It's a live network with public node maps, health monitoring, MQTT
+    observer infrastructure, and a preconfigured firmware build so joining takes
+    minutes instead of an evening of guesswork.</p>
+    <p class="cta"><a class="button" href="https://chicagooffline.com">chicagooffline.com &rarr;</a></p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="lede">Mostly open source. Mostly things that were annoying enough
+    the second time that I automated them.</p>
+
+    <ul class="projects">
+      <li>
+        <h3><a href="https://github.com/Chicago-Offline/codeplugger">codeplugger</a></h3>
+        <p>Codeplug generator. Takes structured repeater data plus a profile and
+        emits a ready-to-import codeplug — no more hand-entering four hundred
+        channels into a vendor CPS.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/emuehlstein/pyrepeater">pyrepeater</a></h3>
+        <p>Python repeater controller for amateur and GMRS repeaters. IDs,
+        courtesy tones, announcements, scheduling.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/emuehlstein/MeshCore">MeshCore <span class="mono">chioff-flex</span></a></h3>
+        <p>Fork of the MeshCore observer firmware preconfigured with the radio
+        and MQTT settings Chicagoland standardizes on. Flash and you're on the
+        mesh.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/emuehlstein/meshcore-health-check">meshcore-health-check</a></h3>
+        <p>Node health monitoring for the mesh — catches silent nodes before
+        someone notices the hard way.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/Chicago-Offline/dm32-info">dm32-info</a></h3>
+        <p>Reverse-engineering reference for the Baofeng DM-32UV: memory
+        layout, firmware variants, programming tools, and the hardware traps
+        that soft-brick radios.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/emuehlstein/dmrconfig_dm32">dmrconfig_dm32</a></h3>
+        <p>Fork of dmrconfig adding DM-32 read/write support, so the radio can
+        be programmed from a Unix command line.</p>
+      </li>
+    </ul>
+    <p class="cta"><a class="button" href="https://github.com/emuehlstein">All repositories on GitHub &rarr;</a></p>
+  </div>
+</section>
+
+<section class="band band-alt">
+  <div class="wrap narrow">
+    <h2>Contact</h2>
+    <p>QSL via <a href="https://www.qrz.com/db/KC9MHE">QRZ</a> or LoTW. For
+    anything mesh-related, the Chicago Offline channels are faster than email.</p>
+    <ul class="links">
+      <li><a href="https://www.qrz.com/db/KC9MHE">QRZ &middot; KC9MHE</a></li>
+      <li><a href="https://github.com/emuehlstein">GitHub &middot; emuehlstein</a></li>
+      <li><a href="https://chicagooffline.com">Chicago Offline</a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="mono">KC9MHE &middot; EN61 &middot; Chicago, IL</p>
+    <p class="fine">73. This page replaced one that had been up since 2010.</p>
+  </div>
+</footer>
+
+</body>
+</html>
