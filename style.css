@@ -204,12 +204,12 @@ h2::before {
 
 .links { list-style: none; margin: 1.5rem 0 0; padding: 0; display: grid; gap: .6rem; font-family: var(--mono); font-size: .92rem; }
 
-.qsl { margin: 2.8rem 0 0; }
+.qsl { margin: 2.8rem 0 0; display: grid; gap: 1rem; }
 .qsl img {
   display: block;
   width: 100%; height: auto;
   border: 1px solid var(--border);
-  border-radius: 3px;
+  border-radius: 6px;
 }
 .qsl figcaption {
   margin-top: .7rem;

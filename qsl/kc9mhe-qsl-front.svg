@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1650" height="1050" viewBox="0 0 1650 1050">
+<defs>
+  <clipPath id="card"><rect width="1650" height="1050" rx="16"/></clipPath>
+
+  <!-- lift the LiDAR relief and push it cyan -->
+  <filter id="tone" x="0" y="0" width="100%" height="100%">
+    <feColorMatrix type="matrix" values="
+        0.62 0     0     0 0
+        0    0.86  0.10  0 0
+        0.08 0.24  0.92  0 0
+        0    0     0     1 0"/>
+    <feComponentTransfer>
+      <feFuncR type="gamma" amplitude="1" exponent="1.25" offset="0"/>
+      <feFuncG type="gamma" amplitude="1" exponent="1.15" offset="0"/>
+      <feFuncB type="gamma" amplitude="1" exponent="1.02" offset="0"/>
+    </feComponentTransfer>
+  </filter>
+
+  <!-- fade the stair-stepped LiDAR coverage edge out over the lake -->
+  <linearGradient id="lakeFade" x1="0.58" y1="0" x2="1" y2="0">
+    <stop offset="0%"   stop-color="#050a10" stop-opacity="0"/>
+    <stop offset="55%"  stop-color="#050a10" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#050a10" stop-opacity="0.96"/>
+  </linearGradient>
+
+  <linearGradient id="baseFade" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0%"   stop-color="#050a10" stop-opacity="0.96"/>
+    <stop offset="38%"  stop-color="#050a10" stop-opacity="0.62"/>
+    <stop offset="75%"  stop-color="#050a10" stop-opacity="0.10"/>
+    <stop offset="100%" stop-color="#050a10" stop-opacity="0.30"/>
+  </linearGradient>
+
+  <radialGradient id="vig" cx="0.40" cy="0.62" r="0.72">
+    <stop offset="30%"  stop-color="#050a10" stop-opacity="0"/>
+    <stop offset="72%"  stop-color="#050a10" stop-opacity="0.42"/>
+    <stop offset="100%" stop-color="#050a10" stop-opacity="0.88"/>
+  </radialGradient>
+</defs>
+
+<g clip-path="url(#card)">
+  <rect width="1650" height="1050" fill="#050a10"/>
+  <image xlink:href="chicago-base.jpg" x="0" y="0" width="1650" height="1050"
+         preserveAspectRatio="xMidYMid slice" filter="url(#tone)"/>
+  <rect width="1650" height="1050" fill="url(#lakeFade)"/>
+  <rect width="1650" height="1050" fill="url(#vig)"/>
+  <rect width="1650" height="1050" fill="url(#baseFade)"/>
+
+  <!-- hairline frame -->
+  <rect x="34" y="34" width="1582" height="982" rx="6" fill="none"
+        stroke="#00E5FF" stroke-width="1.6" opacity="0.30"/>
+
+  <text x="92" y="132" font-family="Menlo" font-size="26" letter-spacing="11"
+        fill="#00E5FF">AMATEUR RADIO STATION</text>
+
+  <text x="86" y="840" font-family="Menlo" font-size="212" font-weight="bold"
+        letter-spacing="2" fill="#eaf2f6">KC9MHE</text>
+
+  <line x1="94" y1="888" x2="700" y2="888" stroke="#00E5FF" stroke-width="3"/>
+
+  <text x="94" y="944" font-family="Helvetica Neue" font-size="41" letter-spacing="2"
+        fill="#eaf2f6">Eric Muehlstein</text>
+  <text x="94" y="992" font-family="Menlo" font-size="27" letter-spacing="5"
+        fill="#7d8c96">CHICAGO, ILLINOIS &#183; GRID EN61DT</text>
+
+  <text x="1558" y="132" text-anchor="end" font-family="Menlo" font-size="26"
+        letter-spacing="6" fill="#7d8c96">LAKE MICHIGAN</text>
+  <text x="1558" y="992" text-anchor="end" font-family="Menlo" font-size="26"
+        letter-spacing="4" fill="#FFB300">CHICAGOOFFLINE.COM</text>
+</g>
+</svg>
