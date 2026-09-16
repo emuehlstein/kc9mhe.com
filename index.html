@@ -45,33 +45,31 @@
       <article class="card accent-cyan">
         <h3>MeshCore / LoRa</h3>
         <p>Primary focus. Running observer and repeater nodes on the Chicago
-        mesh and maintaining the firmware build the region standardizes on.</p>
-        <dl class="spec">
-          <dt>Frequency</dt><dd>910.525 MHz</dd>
-          <dt>Bandwidth</dt><dd>62.5 kHz</dd>
-          <dt>Spreading</dt><dd>SF 7</dd>
-          <dt>Coding rate</dt><dd>CR 5</dd>
-        </dl>
+        mesh and maintaining the firmware build the region standardizes on.
+        Current radio settings and the node map live at
+        <a href="https://chicagooffline.com">chicagooffline.com</a>.</p>
       </article>
 
       <article class="card accent-amber">
-        <h3>DMR</h3>
-        <p>Baofeng DM-32UV handhelds, programmed from a generator I wrote
-        rather than by hand in vendor CPS. Reverse-engineering notes published
-        for the parts the manufacturer never documented.</p>
+        <h3>Reverse Engineering &amp; CPS</h3>
+        <p>Observing the serial protocols for all of the radios in my collection
+        and programming them via a codeplug generator,
+        <a href="https://github.com/Chicago-Offline/codeplugger">codeplugger</a>.</p>
       </article>
 
       <article class="card accent-green">
         <h3>GMRS &amp; MURS</h3>
         <p>WRXC682. Family and neighborhood comms — the licensing tier most
-        people actually need, and the one worth making easy to program.</p>
+        people actually need, and the one worth making easy to program. I run a
+        repeater at home on <span class="mono">550</span> with
+        <span class="mono">DPL 023</span>, mostly for the fun of it.</p>
       </article>
 
       <article class="card">
-        <h3>APRS &amp; packet</h3>
-        <p><span class="mono">KC9MHE-9</span> mobile. Also running Direwolf on
-        a Pi for RF packet, and experimenting with Reticulum over a Bluetooth
-        KISS TNC.</p>
+        <h3>Packet, APRS &amp; AREDN</h3>
+        <p><span class="mono">KC9MHE-9</span> mobile, plus an AREDN node on the
+        high-speed mesh. Always trying to blur the line between a serial port
+        and a walkie talkie.</p>
       </article>
     </div>
   </div>
@@ -105,6 +103,17 @@
         channels into a vendor CPS.</p>
       </li>
       <li>
+        <h3><a href="https://github.com/Chicago-Offline/ssrf-lite">ssrf-lite</a></h3>
+        <p>A YAML spec for describing spectrum resources, and a data library of
+        known channel plans, repeaters, DMR talkgroups, and antenna systems.
+        The thing codeplugger reads from.</p>
+      </li>
+      <li>
+        <h3><a href="https://github.com/Chicago-Offline/chioff-codeplugger-profiles-shared">chioff-codeplugger-profiles-shared</a></h3>
+        <p>Codeplugger profiles for the Chicago Offline shared community nets —
+        so everyone's radio comes out programmed the same way.</p>
+      </li>
+      <li>
         <h3><a href="https://github.com/emuehlstein/pyrepeater">pyrepeater</a></h3>
         <p>Python repeater controller for amateur and GMRS repeaters. IDs,
         courtesy tones, announcements, scheduling.</p>
@@ -114,11 +123,6 @@
         <p>Fork of the MeshCore observer firmware preconfigured with the radio
         and MQTT settings Chicagoland standardizes on. Flash and you're on the
         mesh.</p>
-      </li>
-      <li>
-        <h3><a href="https://github.com/emuehlstein/meshcore-health-check">meshcore-health-check</a></h3>
-        <p>Node health monitoring for the mesh — catches silent nodes before
-        someone notices the hard way.</p>
       </li>
       <li>
         <h3><a href="https://github.com/Chicago-Offline/dm32-info">dm32-info</a></h3>

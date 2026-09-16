@@ -172,19 +172,6 @@ h2::before {
 }
 .card p { margin: 0; font-size: .95rem; color: var(--text); }
 
-.spec {
-  margin: 1.1rem 0 0;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: .3rem 1rem;
-  font-family: var(--mono);
-  font-size: .82rem;
-  border-top: 1px solid var(--border);
-  padding-top: .9rem;
-}
-.spec dt { color: var(--text-dim); }
-.spec dd { margin: 0; color: var(--cyan); text-align: right; }
-
 /* ---------- projects ---------- */
 
 .projects { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.6rem; }
