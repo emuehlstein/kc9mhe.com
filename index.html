@@ -19,7 +19,12 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="hero">
-  <img class="hero-bg" src="assets/hero-chicago.jpg" alt="" aria-hidden="true" fetchpriority="high">
+  <picture>
+    <source type="image/webp"
+            srcset="assets/hero-chicago.webp 1x, assets/hero-chicago@2x.webp 2x">
+    <img class="hero-bg" src="assets/hero-chicago.jpg" alt="" aria-hidden="true"
+         width="1920" height="700" fetchpriority="high">
+  </picture>
   <div class="hero-scrim"></div>
   <div class="hero-inner">
     <p class="eyebrow">Amateur Radio Station</p>
