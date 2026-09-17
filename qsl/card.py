@@ -75,7 +75,7 @@ def front() -> str:
   <text x="94" y="944" font-family="{SANS}" font-size="41" letter-spacing="2"
         fill="{TEXT}">Eric Muehlstein</text>
   <text x="94" y="992" font-family="{MONO}" font-size="27" letter-spacing="5"
-        fill="{DIM}">CHICAGO, ILLINOIS &#183; GRID EN61DT</text>
+        fill="{DIM}">CHICAGO, ILLINOIS &#183; GRID EN61DX</text>
 
   <text x="{W-92}" y="132" text-anchor="end" font-family="{MONO}" font-size="26"
         letter-spacing="6" fill="{DIM}">LAKE MICHIGAN</text>
@@ -135,7 +135,7 @@ def back() -> str:
     o.append(f'<text x="92" y="{H-124}" font-family="{MONO}" font-size="22" '
              f'letter-spacing="4" fill="{AMBER}">PSE / TNX QSL &#183; LoTW &#183; QRZ.COM/DB/KC9MHE</text>')
     o.append(f'<text x="{W-92}" y="{H-124}" text-anchor="end" font-family="{MONO}" '
-             f'font-size="22" letter-spacing="4" fill="{DIM}">GRID EN61DT &#183; CHICAGO, IL</text>')
+             f'font-size="22" letter-spacing="4" fill="{DIM}">GRID EN61DX &#183; CHICAGO, IL</text>')
     o += ['</g>', '</svg>']
     return "\n".join(o)
 

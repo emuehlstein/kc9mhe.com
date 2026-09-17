@@ -66,6 +66,8 @@ resolves Menlo/Courier New/Andale Mono/Helvetica Neue fine.
    - `KC9MHE` mono bold ~215px at (86,855), fill #e8eef2  <-- single font-family only
    - cyan rule y=900, `Eric Muehlstein` sans 40 at (92,955)
    - `CHICAGO, ILLINOIS · GRID EN61DT` mono 28 dim #7d8c96 at (92,1002)
+     (historical note — draft used the wrong grid square; corrected to
+     EN61DX for 2101 W Summerdale, see kc9mhe/STATE.md 2026-09-16)
    - `CHICAGOOFFLINE.COM` amber #FFB300 mono 26, right-aligned at (1560,1002)
    - optional amber home-node dot + range rings over the real map
 3. Also build a **back** (QSO fields): TO RADIO / DATE / UTC / FREQ / MODE / RST /
